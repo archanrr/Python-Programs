@@ -1,0 +1,10 @@
+s = input("Enter the sentence")
+count_letters = 0
+count_digits = 0
+s = s.upper()
+for i in s:
+    if 'A' <= i <= 'Z':
+        count_letters += 1
+    elif '0' <= i <= '9':
+        count_digits += 1
+print("LETTERS:{}\nDIGITS:{}".format(count_letters, count_digits))
